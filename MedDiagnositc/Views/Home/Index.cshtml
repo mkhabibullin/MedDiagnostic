@@ -1,0 +1,50 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<h1>Симптомы</h1>
+
+@foreach(var s in ViewBag.Symptomes)
+{
+    <div data-id="@s.Id" class="symptome">
+        <p>@s.Name</p>
+    </div>
+}
+
+
+@section scripts
+{
+    <script>
+        $('.symptome').on('click', function () {
+
+            if ($(this).hasClass('symptome-selected')) {
+                $(this).removeClass('symptome-selected');
+            }
+            else {
+                $(this).addClass('symptome-selected');
+            }
+
+            var symptoms = [];
+            $('.symptome').each(function () {
+                if ($(this).hasClass('symptome-selected')) {
+                    symptoms.push({ 'id': $(this).data('id') });
+                }
+            });
+
+            $.ajax({
+                url: '@Url.Action("Process")',
+                type: 'POST',
+                dataType: 'json',
+                contentType: "application/json; charset=utf-8",
+                data: JSON.stringify({ 'symptomes': symptoms }),
+                success: function (data) {
+                    if (!data) {
+                        alert("Ошибка");
+                    }
+                    data.forEach(function (d) {
+                        alert(d.DiagnosisName + ' - ' + d.Coefficient);
+                    });
+                }
+            });
+        });
+    </script>
+}

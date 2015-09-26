@@ -1,0 +1,27 @@
+﻿@model MedDiagnositc.Models.Diagnoses.DiagnosisViewModel
+@{
+    ViewBag.Title = "Diagnosis";
+}
+
+<h2>@Model.Name</h2>
+
+@foreach (var s in Model.Symptomes)
+{
+    <div id="@s.Id">
+        @s.Name <button onclick="deleteSymptom(@Model.Id, @s.Id)">X</button>
+    </div>
+}
+
+<script>
+    function deleteSymptom(dId, sId)
+    {
+        $.ajax({
+            url: '@Url.Action("DeleteSymptom", "Home")' + '?diagnosId=' +dId + '&symptomId=' + sId,
+            type: 'GET',
+            success: function (data) {
+                $("#" + sId).remove();
+            }
+        });
+
+    }
+</script>

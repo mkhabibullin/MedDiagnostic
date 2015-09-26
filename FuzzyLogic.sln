@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FuzzyLogic", "FuzzyLogic\FuzzyLogic.csproj", "{055AFD91-68DA-45BF-8A1B-0E74831A26CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MedDiagnositc", "MedDiagnositc\MedDiagnositc.csproj", "{8C351D95-5602-44B2-8236-ED6E8083531C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FuzzyLogic2", "FuzzyLogic2\FuzzyLogic2.csproj", "{5070B5B6-F876-45F6-85C6-C46BD89A4D7A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{055AFD91-68DA-45BF-8A1B-0E74831A26CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{055AFD91-68DA-45BF-8A1B-0E74831A26CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{055AFD91-68DA-45BF-8A1B-0E74831A26CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{055AFD91-68DA-45BF-8A1B-0E74831A26CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C351D95-5602-44B2-8236-ED6E8083531C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C351D95-5602-44B2-8236-ED6E8083531C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C351D95-5602-44B2-8236-ED6E8083531C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C351D95-5602-44B2-8236-ED6E8083531C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5070B5B6-F876-45F6-85C6-C46BD89A4D7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5070B5B6-F876-45F6-85C6-C46BD89A4D7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5070B5B6-F876-45F6-85C6-C46BD89A4D7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5070B5B6-F876-45F6-85C6-C46BD89A4D7A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

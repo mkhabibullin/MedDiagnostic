@@ -1,0 +1,12 @@
+﻿@model MedDiagnositc.Diagnoses.Models.DiagnosesListViewModel
+@{
+    ViewBag.Title = "Diagnoses";
+}
+
+<h2>Диагнозы</h2>
+
+@foreach(var d in Model.Diagnosis)
+{
+    <br/>
+    <a href="@Url.Action("Diagnosis", "Home", new { id = d.Id})">@d.Name</a>
+}
